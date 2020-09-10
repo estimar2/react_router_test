@@ -22,7 +22,7 @@ function App() {
 
         <Route exact path="/" component={Home} />
         <Route exact path="/About" component={About} />
-        <Route exact path="/User" component={User} />
+        <Route exact path="/User/:name" component={User} />
       </div>
     </Router>
   );

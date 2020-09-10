@@ -1,13 +1,11 @@
 import React from "react";
 
-class User extends React.Component {
-  render() {
-    return (
-      <div>
-        <h2>User Page</h2>
-      </div>
-    );
-  }
-}
+const User = ({ match }) => {
+  return (
+    <div>
+      <h2> User page / {match.params.name}</h2>
+    </div>
+  );
+};
 
 export default User;
